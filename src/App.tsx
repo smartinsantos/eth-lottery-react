@@ -1,8 +1,10 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { web3i } from 'web3i'
 
 function App() {
+  web3i.eth.getAccounts().then(accounts => console.log('accounts => ', accounts))
   return (
     <div className="App">
       <header className="App-header">
